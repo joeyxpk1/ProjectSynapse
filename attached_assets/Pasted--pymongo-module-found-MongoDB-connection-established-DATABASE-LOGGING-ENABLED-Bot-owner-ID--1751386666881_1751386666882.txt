@@ -1,0 +1,64 @@
+✅ pymongo module found
+✅ MongoDB connection established - DATABASE LOGGING ENABLED
+✅ Bot owner ID loaded: 662655499811946536
+🔍 DEBUG: Environment check - MONGODB_URL exists: True
+🔍 DEBUG: Environment check - MONGODB_URI exists: False
+🔗 Connecting to MongoDB for database logging...
+✅ MongoDB connected - database logging ACTIVE
+✅ MongoDB database logging ENABLED - all moderation actions will be recorded
+✅ MONGODB: Database connection verified - ready for crosschat logging
+🔍 DEBUG: Getting crosschat channels from MongoDB...
+🔍 DEBUG: Checking connection status - failed: False
+✅ DEBUG: Existing connection verified
+✅ DEBUG: Found 10 crosschat channels
+✅ CROSSCHAT STATUS: 10 channels registered in database
+ℹ️  Use /setup command to register new crosschat channels manually
+🔍 VERIFYING: Checking all MongoDB collections...
+✅ VERIFIED: Collection 'crosschat_messages' exists with 239 documents
+✅ VERIFIED: Collection 'crosschat_channels' exists with 10 documents
+✅ VERIFIED: Collection 'banned_users' exists with 0 documents
+✅ VERIFIED: Collection 'user_warnings' exists with 4 documents
+✅ VERIFIED: Collection 'moderation_logs' exists with 28 documents
+✅ VERIFIED: Collection 'guild_info' exists with 0 documents
+✅ VERIFIED: Collection 'bot_status' exists with 1 documents
+✅ AutoMod system initialized with MongoDB logging
+🔍 TopGG DEBUG: Token exists: True
+🔍 TopGG DEBUG: Token starts with: eyJhbGciOi...
+🔍 TopGG DEBUG: Bot ID: 1381206034269339658
+🔍 TopGG DEBUG: API URL: https://top.gg/api/bots/1381206034269339658/stats
+✅ Top.gg integration enabled
+🔍 DEBUG: TopGG Handler initialized - Enabled: True
+🔍 DEBUG: TopGG Token present: True
+🔍 DEBUG: TopGG Bot ID: 1381206034269339658
+SINGLETON_CREATE: Creating the ONLY SimpleCrossChat instance
+SIMPLE_SINGLETON: Initializing the singleton instance
+SIMPLE_SINGLETON: Initialization complete
+🔍 DEBUG: Bot has db_handler: True
+🔍 DEBUG: Bot db_handler is not None: True
+🔍 DEBUG: db_handler connection_failed: False
+✅ DEBUG: SimpleCrossChat will have access to working db_handler
+✅ CROSSCHAT: SimpleCrossChat system initialized - crosschat logging ENABLED
+🔍🔍🔍 DEBUG_VERSION: Message event handler updated with triple debug markers - version 2025-07-01-16:15
+STARTING SYNAPSECHAT BOT
+Flask starting on port 10000
+Token length: 72
+ * Serving Flask app 'bot'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:10000
+ * Running on http://10.226.61.21:10000
+Press CTRL+C to quit
+127.0.0.1 - - [01/Jul/2025 16:15:06] "HEAD / HTTP/1.1" 200 -
+     ==> Your service is live 🎉
+     ==> 
+     ==> ///////////////////////////////////////////////////////////
+     ==> 
+     ==> Available at your primary URL https://synapsechat-bot-byvm.onrender.com
+     ==> 
+     ==> ///////////////////////////////////////////////////////////
+10.226.19.196 - - [01/Jul/2025 16:15:15] "GET / HTTP/1.1" 200 -
+10.226.149.66 - - [01/Jul/2025 16:15:53] "HEAD / HTTP/1.1" 200 -
+10.226.185.193 - - [01/Jul/2025 16:16:40] "HEAD /?1751386600616 HTTP/1.1" 200 -
+🔍 DEBUG: Checking connection status - failed: False
+10.226.8.194 - - [01/Jul/2025 16:16:56] "HEAD / HTTP/1.1" 200 -

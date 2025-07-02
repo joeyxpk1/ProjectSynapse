@@ -1,0 +1,148 @@
+🔍 DEBUG: Getting crosschat channels from MongoDB...
+🔍 DEBUG: Checking connection status - failed: False
+✅ DEBUG: Existing connection verified
+✅ DEBUG: Found 10 crosschat channels
+STATUS_DEBUG: Found 10 crosschat channels
+🔍 DEBUG: Checking connection status - failed: False
+✅ DEBUG: Existing connection verified
+✅ MONGODB: Retrieved crosschat message count: 239
+🔍 MESSAGE_COUNT: Database returned 239 messages
+🔍 STATUS_DEBUG: Found 239 total messages processed
+STATUS_CYCLE: Updated to 'Watching 239 messages processed'
+🔍 DEBUG: Getting crosschat channels from MongoDB...
+🔍 DEBUG: Checking connection status - failed: False
+✅ DEBUG: Existing connection verified
+✅ DEBUG: Found 10 crosschat channels
+STATUS_DEBUG: Found 10 crosschat channels
+🔍 DEBUG: Checking connection status - failed: False
+✅ DEBUG: Existing connection verified
+✅ MONGODB: Retrieved crosschat message count: 239
+🔍 MESSAGE_COUNT: Database returned 239 messages
+🔍 STATUS_DEBUG: Found 239 total messages processed
+STATUS_CYCLE: Updated to 'Watching Latency: 27ms'
+🔍 DEBUG: Getting crosschat channels from MongoDB...
+🔍 DEBUG: Checking connection status - failed: False
+✅ DEBUG: Existing connection verified
+✅ DEBUG: Found 10 crosschat channels
+STATUS_DEBUG: Found 10 crosschat channels
+🔍 DEBUG: Checking connection status - failed: False
+✅ DEBUG: Existing connection verified
+✅ MONGODB: Retrieved crosschat message count: 239
+🔍 MESSAGE_COUNT: Database returned 239 messages
+🔍 STATUS_DEBUG: Found 239 total messages processed
+STATUS_CYCLE: Updated to 'Watching Run /setup to get started'
+🔍 DEBUG: Getting crosschat channels from MongoDB...
+🔍 DEBUG: Checking connection status - failed: False
+✅ DEBUG: Existing connection verified
+✅ DEBUG: Found 10 crosschat channels
+STATUS_DEBUG: Found 10 crosschat channels
+🔍 DEBUG: Checking connection status - failed: False
+✅ DEBUG: Existing connection verified
+✅ MONGODB: Retrieved crosschat message count: 239
+🔍 MESSAGE_COUNT: Database returned 239 messages
+🔍 STATUS_DEBUG: Found 239 total messages processed
+STATUS_CYCLE: Updated to 'Watching We just dot VERIFIED!'
+🔍 DEBUG: Getting crosschat channels from MongoDB...
+🔍 DEBUG: Checking connection status - failed: False
+✅ DEBUG: Existing connection verified
+✅ DEBUG: Found 10 crosschat channels
+STATUS_DEBUG: Found 10 crosschat channels
+🔍 DEBUG: Checking connection status - failed: False
+✅ DEBUG: Existing connection verified
+✅ MONGODB: Retrieved crosschat message count: 239
+🔍 MESSAGE_COUNT: Database returned 239 messages
+🔍 STATUS_DEBUG: Found 239 total messages processed
+STATUS_CYCLE: Updated to 'Watching 10 Cross Chat channels'
+🔍 DEBUG: Getting crosschat channels from MongoDB...
+🔍 DEBUG: Checking connection status - failed: False
+✅ DEBUG: Existing connection verified
+✅ DEBUG: Found 10 crosschat channels
+STATUS_DEBUG: Found 10 crosschat channels
+🔍 DEBUG: Checking connection status - failed: False
+✅ DEBUG: Existing connection verified
+✅ MONGODB: Retrieved crosschat message count: 239
+🔍 MESSAGE_COUNT: Database returned 239 messages
+🔍 STATUS_DEBUG: Found 239 total messages processed
+STATUS_CYCLE: Updated to 'Watching 2,590 total members'
+🔍 DEBUG: Getting crosschat channels from MongoDB...
+🔍 DEBUG: Checking connection status - failed: False
+✅ DEBUG: Existing connection verified
+✅ DEBUG: Found 10 crosschat channels
+STATUS_DEBUG: Found 10 crosschat channels
+🔍 DEBUG: Checking connection status - failed: False
+✅ DEBUG: Existing connection verified
+✅ MONGODB: Retrieved crosschat message count: 239
+🔍 MESSAGE_COUNT: Database returned 239 messages
+🔍 STATUS_DEBUG: Found 239 total messages processed
+STATUS_CYCLE: Updated to 'Watching 239 messages processed'
+🔍 DEBUG: Getting crosschat channels from MongoDB...
+🔍 DEBUG: Checking connection status - failed: False
+✅ DEBUG: Existing connection verified
+✅ DEBUG: Found 10 crosschat channels
+STATUS_DEBUG: Found 10 crosschat channels
+🔍 DEBUG: Checking connection status - failed: False
+✅ DEBUG: Existing connection verified
+✅ MONGODB: Retrieved crosschat message count: 239
+🔍 MESSAGE_COUNT: Database returned 239 messages
+🔍 STATUS_DEBUG: Found 239 total messages processed
+STATUS_CYCLE: Updated to 'Watching Latency: 32ms'
+🔍 DEBUG: Getting crosschat channels from MongoDB...
+🔍 DEBUG: Checking connection status - failed: False
+✅ DEBUG: Existing connection verified
+✅ DEBUG: Found 10 crosschat channels
+STATUS_DEBUG: Found 10 crosschat channels
+🔍 DEBUG: Checking connection status - failed: False
+✅ DEBUG: Existing connection verified
+✅ MONGODB: Retrieved crosschat message count: 239
+🔍 MESSAGE_COUNT: Database returned 239 messages
+🔍 STATUS_DEBUG: Found 239 total messages processed
+STATUS_CYCLE: Updated to 'Watching Run /setup to get started'
+🔍 DEBUG: Getting crosschat channels from MongoDB...
+🔍 DEBUG: Checking connection status - failed: False
+✅ DEBUG: Existing connection verified
+✅ DEBUG: Found 10 crosschat channels
+STATUS_DEBUG: Found 10 crosschat channels
+🔍 DEBUG: Checking connection status - failed: False
+✅ DEBUG: Existing connection verified
+✅ MONGODB: Retrieved crosschat message count: 239
+🔍 MESSAGE_COUNT: Database returned 239 messages
+🔍 STATUS_DEBUG: Found 239 total messages processed
+STATUS_CYCLE: Updated to 'Watching We just dot VERIFIED!'
+🔍 DEBUG: Getting crosschat channels from MongoDB...
+🔍 DEBUG: Checking connection status - failed: False
+✅ DEBUG: Existing connection verified
+✅ DEBUG: Found 10 crosschat channels
+STATUS_DEBUG: Found 10 crosschat channels
+🔍 DEBUG: Checking connection status - failed: False
+✅ DEBUG: Existing connection verified
+✅ MONGODB: Retrieved crosschat message count: 239
+🔍 MESSAGE_COUNT: Database returned 239 messages
+🔍 STATUS_DEBUG: Found 239 total messages processed
+STATUS_CYCLE: Updated to 'Watching 10 Cross Chat channels'
+🔍 DEBUG: Getting crosschat channels from MongoDB...
+🔍 DEBUG: Checking connection status - failed: False
+✅ DEBUG: Existing connection verified
+✅ DEBUG: Found 10 crosschat channels
+🔍 DEBUG: Getting crosschat channels from MongoDB...
+🔍 DEBUG: Checking connection status - failed: False
+✅ DEBUG: Existing connection verified
+✅ DEBUG: Found 10 crosschat channels
+STATUS_DEBUG: Found 10 crosschat channels
+🔍 DEBUG: Checking connection status - failed: False
+✅ DEBUG: Existing connection verified
+✅ MONGODB: Retrieved crosschat message count: 239
+🔍 MESSAGE_COUNT: Database returned 239 messages
+🔍 STATUS_DEBUG: Found 239 total messages processed
+STATUS_CYCLE: Updated to 'Watching 2,590 total members'
+🔍 DEBUG: Getting crosschat channels from MongoDB...
+🔍 DEBUG: Checking connection status - failed: False
+✅ DEBUG: Existing connection verified
+✅ DEBUG: Found 10 crosschat channels
+STATUS_DEBUG: Found 10 crosschat channels
+🔍 DEBUG: Checking connection status - failed: False
+✅ DEBUG: Existing connection verified
+✅ MONGODB: Retrieved crosschat message count: 239
+10.226.224.68 - - [01/Jul/2025 16:08:27] "HEAD / HTTP/1.1" 200 -
+🔍 MESSAGE_COUNT: Database returned 239 messages
+🔍 MESSAGE_COUNT: Database returned 239 messages
+10.226.224.68 - - [01/Jul/2025 16:08:27] "HEAD / HTTP/1.1" 200 -

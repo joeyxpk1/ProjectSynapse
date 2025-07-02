@@ -1,0 +1,247 @@
+✅ pymongo module found
+✅ MongoDB connection established - DATABASE LOGGING ENABLED
+✅ Bot owner ID loaded: 662655499811946536
+🔍 DEBUG: Environment check - MONGODB_URL exists: True
+🔍 DEBUG: Environment check - MONGODB_URI exists: False
+🔗 Connecting to MongoDB for database logging...
+✅ MongoDB connected - database logging ACTIVE
+✅ MongoDB database logging ENABLED - all moderation actions will be recorded
+✅ MONGODB: Database connection verified - ready for crosschat logging
+🔍 DEBUG: Getting crosschat channels from MongoDB...
+🔍 DEBUG: Checking connection status - failed: False
+✅ DEBUG: Existing connection verified
+✅ DEBUG: Found 10 crosschat channels
+✅ CROSSCHAT STATUS: 10 channels registered in database
+ℹ️  Use /setup command to register new crosschat channels manually
+🔍 VERIFYING: Checking all MongoDB collections...
+✅ VERIFIED: Collection 'crosschat_messages' exists with 239 documents
+✅ VERIFIED: Collection 'crosschat_channels' exists with 10 documents
+✅ VERIFIED: Collection 'banned_users' exists with 0 documents
+✅ VERIFIED: Collection 'user_warnings' exists with 4 documents
+✅ VERIFIED: Collection 'moderation_logs' exists with 28 documents
+✅ VERIFIED: Collection 'guild_info' exists with 0 documents
+✅ VERIFIED: Collection 'bot_status' exists with 1 documents
+✅ AutoMod system initialized with MongoDB logging
+🔍 TopGG DEBUG: Token exists: True
+🔍 TopGG DEBUG: Token starts with: eyJhbGciOi...
+🔍 TopGG DEBUG: Bot ID: 1381206034269339658
+🔍 TopGG DEBUG: API URL: https://top.gg/api/bots/1381206034269339658/stats
+✅ Top.gg integration enabled
+🔍 DEBUG: TopGG Handler initialized - Enabled: True
+🔍 DEBUG: TopGG Token present: True
+🔍 DEBUG: TopGG Bot ID: 1381206034269339658
+SINGLETON_CREATE: Creating the ONLY SimpleCrossChat instance
+SIMPLE_SINGLETON: Initializing the singleton instance
+SIMPLE_SINGLETON: Initialization complete
+🔍 DEBUG: Bot has db_handler: True
+🔍 DEBUG: Bot db_handler is not None: True
+🔍 DEBUG: db_handler connection_failed: False
+✅ DEBUG: SimpleCrossChat will have access to working db_handler
+✅ CROSSCHAT: SimpleCrossChat system initialized - crosschat logging ENABLED
+🔍🔍🔍 DEBUG_VERSION: Message event handler updated with triple debug markers - version 2025-07-01-16:15
+STARTING SYNAPSECHAT BOT
+Flask starting on port 10000
+🔍🔍🔍 TOKEN_DEBUG: Token length: 72
+🔍🔍🔍 TOKEN_DEBUG: Token starts with: MTM4MTIwNj...
+Token length: 72
+🔍🔍🔍 DISCORD_CONNECT: Attempting Discord gateway connection...
+ * Serving Flask app 'bot'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:10000
+ * Running on http://10.226.190.71:10000
+Press CTRL+C to quit
+127.0.0.1 - - [01/Jul/2025 16:29:37] "HEAD / HTTP/1.1" 200 -
+10.226.19.196 - - [01/Jul/2025 16:29:43] "HEAD / HTTP/1.1" 200 -
+     ==> Your service is live 🎉
+     ==> 
+     ==> ///////////////////////////////////////////////////////////
+     ==> 
+     ==> Available at your primary URL https://synapsechat-bot-byvm.onrender.com
+     ==> 
+     ==> ///////////////////////////////////////////////////////////
+10.226.185.193 - - [01/Jul/2025 16:29:45] "GET / HTTP/1.1" 200 -
+🔍 DEBUG: Getting crosschat channels from MongoDB...
+10.226.224.68 - - [01/Jul/2025 16:30:48] "HEAD / HTTP/1.1" 200 -
+10.226.208.196 - - [01/Jul/2025 16:31:40] "HEAD /?1751387500833 HTTP/1.1" 200 -
+10.226.208.196 - - [01/Jul/2025 16:31:51] "HEAD / HTTP/1.1" 200 -
+10.226.215.69 - - [01/Jul/2025 16:32:54] "HEAD / HTTP/1.1" 200 -
+🔍🔍🔍 BOT_READY_EVENT: Discord gateway connected! Bot user: SynapseChat#1405
+🔍🔍🔍 BOT_READY_GUILDS: Connected to 18 guilds
+🔍🔍🔍 BOT_READY_INTENTS: message_content=True, guilds=True, members=True
+BOT ONLINE: SynapseChat#1405
+Guilds: 18
+Registering all slash commands...
+Starting command sync process...
+✅ Guild sync BloxTech Applications: 0 commands immediately available
+✅ Guild sync 🍿Hollywood Films: 0 commands immediately available
+✅ Guild sync Emerald Bay Hotels: 0 commands immediately available
+✅ Guild sync Rosell V2: 0 commands immediately available
+✅ Guild sync Community Radio HFX: 0 commands immediately available
+✅ Guild sync Hotel Halifax: 0 commands immediately available
+✅ Guild sync Beriiez Bakery: 0 commands immediately available
+✅ Guild sync Swirlify Departments Server: 0 commands immediately available
+✅ Guild sync SynapseChat | •  Community Support Hub: 0 commands immediately available
+✅ Guild sync SK | Human Resources: 0 commands immediately available
+✅ Guild sync HitumStudios Community: 0 commands immediately available
+✅ Guild sync Speedkarting: 0 commands immediately available
+✅ Guild sync Robote Bar: 0 commands immediately available
+✅ Guild sync CineYork (Beta): 0 commands immediately available
+✅ Guild sync GLITCHERS | PARTY v9: 0 commands immediately available
+✅ Guild sync KAPATILDI!: 0 commands immediately available
+✅ Guild sync Anomalous Basement: 0 commands immediately available
+✅ Guild sync Vani Town CFW: 0 commands immediately available
+SUCCESS: 15 commands synced globally with Discord:
+  ✓ /ping
+  ✓ /status
+  ✓ /announce
+  ✓ /help
+  ✓ /serverinfo
+  ✓ /warn
+  ✓ /ban
+  ✓ /unban
+  ✓ /delete
+  ✓ /serverban
+  ✓ /serverunban
+  ✓ /serverbans
+  ✓ /crosschat
+  ✓ /setup
+  ✓ /invite
+📊 SYNC SUMMARY: 0 guild commands, 15 global commands
+⚠️  WARNING: Missing commands: ['testtopgg']
+Attempting force re-sync...
+Guild BloxTech Applications: 0 commands synced
+Guild 🍿Hollywood Films: 0 commands synced
+Guild Emerald Bay Hotels: 0 commands synced
+Guild Rosell V2: 0 commands synced
+Guild Community Radio HFX: 0 commands synced
+Guild Hotel Halifax: 0 commands synced
+Guild Beriiez Bakery: 0 commands synced
+Guild Swirlify Departments Server: 0 commands synced
+Guild SynapseChat | •  Community Support Hub: 0 commands synced
+Guild SK | Human Resources: 0 commands synced
+Guild HitumStudios Community: 0 commands synced
+Guild Speedkarting: 0 commands synced
+Guild Robote Bar: 0 commands synced
+Guild CineYork (Beta): 0 commands synced
+Guild GLITCHERS | PARTY v9: 0 commands synced
+Guild KAPATILDI!: 0 commands synced
+Guild Anomalous Basement: 0 commands synced
+Guild Vani Town CFW: 0 commands synced
+Started revolving status updater
+BOT READY - All systems operational
+🔍 DEBUG: Getting crosschat channels from MongoDB...
+🔍 DEBUG: Checking connection status - failed: False
+✅ DEBUG: Existing connection verified
+✅ DEBUG: Found 10 crosschat channels
+STATUS_DEBUG: Found 10 crosschat channels
+🔍 DEBUG: Checking connection status - failed: False
+✅ DEBUG: Existing connection verified
+✅ MONGODB: Retrieved crosschat message count: 239
+🔍 MESSAGE_COUNT: Database returned 239 messages
+🔍 STATUS_DEBUG: Found 239 total messages processed
+STATUS_CYCLE: Updated to 'Watching We just dot VERIFIED!'
+🔍 DEBUG: Getting crosschat channels from MongoDB...
+🔍 DEBUG: Checking connection status - failed: False
+✅ DEBUG: Existing connection verified
+✅ DEBUG: Found 10 crosschat channels
+STATUS_DEBUG: Found 10 crosschat channels
+🔍 DEBUG: Checking connection status - failed: False
+✅ DEBUG: Existing connection verified
+✅ MONGODB: Retrieved crosschat message count: 239
+🔍 MESSAGE_COUNT: Database returned 239 messages
+🔍 STATUS_DEBUG: Found 239 total messages processed
+STATUS_CYCLE: Updated to 'Watching 10 Cross Chat channels'
+🔍 DEBUG: Getting crosschat channels from MongoDB...
+🔍 DEBUG: Checking connection status - failed: False
+✅ DEBUG: Existing connection verified
+✅ DEBUG: Found 10 crosschat channels
+STATUS_DEBUG: Found 10 crosschat channels
+🔍 DEBUG: Checking connection status - failed: False
+✅ DEBUG: Existing connection verified
+✅ MONGODB: Retrieved crosschat message count: 239
+🔍 MESSAGE_COUNT: Database returned 239 messages
+🔍 STATUS_DEBUG: Found 239 total messages processed
+STATUS_CYCLE: Updated to 'Watching 2,590 total members'
+🔍 DEBUG: Getting crosschat channels from MongoDB...
+🔍 DEBUG: Checking connection status - failed: False
+✅ DEBUG: Existing connection verified
+✅ DEBUG: Found 10 crosschat channels
+STATUS_DEBUG: Found 10 crosschat channels
+🔍 DEBUG: Checking connection status - failed: False
+✅ DEBUG: Existing connection verified
+✅ MONGODB: Retrieved crosschat message count: 239
+🔍 MESSAGE_COUNT: Database returned 239 messages
+🔍 STATUS_DEBUG: Found 239 total messages processed
+STATUS_CYCLE: Updated to 'Watching 239 messages processed'
+🔍🔍🔍 MESSAGE_RECEIVED: From Joeyxpk in Anomalous Basement#🌍-global-chat: 'testing to see if fix worked....'
+🔍 DEBUG: Getting crosschat channels from MongoDB...
+🔍 DEBUG: Checking connection status - failed: False
+✅ DEBUG: Existing connection verified
+✅ DEBUG: Found 10 crosschat channels
+🔍 DEBUG: Getting crosschat channels from MongoDB...
+🔍 DEBUG: Checking connection status - failed: False
+✅ DEBUG: Existing connection verified
+✅ DEBUG: Found 10 crosschat channels
+STATUS_DEBUG: Found 10 crosschat channels
+🔍 DEBUG: Checking connection status - failed: False
+✅ DEBUG: Existing connection verified
+✅ MONGODB: Retrieved crosschat message count: 239
+🔍 MESSAGE_COUNT: Database returned 239 messages
+🔍 STATUS_DEBUG: Found 239 total messages processed
+STATUS_CYCLE: Updated to 'Watching Latency: 39ms'
+🔍 DEBUG: Getting crosschat channels from MongoDB...
+🔍 DEBUG: Checking connection status - failed: False
+✅ DEBUG: Existing connection verified
+✅ DEBUG: Found 10 crosschat channels
+STATUS_DEBUG: Found 10 crosschat channels
+🔍 DEBUG: Checking connection status - failed: False
+✅ DEBUG: Existing connection verified
+✅ MONGODB: Retrieved crosschat message count: 239
+🔍 MESSAGE_COUNT: Database returned 239 messages
+🔍 STATUS_DEBUG: Found 239 total messages processed
+STATUS_CYCLE: Updated to 'Watching Run /setup to get started'
+🔍 DEBUG: Getting crosschat channels from MongoDB...
+🔍 DEBUG: Checking connection status - failed: False
+✅ DEBUG: Existing connection verified
+✅ DEBUG: Found 10 crosschat channels
+STATUS_DEBUG: Found 10 crosschat channels
+🔍 DEBUG: Checking connection status - failed: False
+✅ DEBUG: Existing connection verified
+✅ MONGODB: Retrieved crosschat message count: 239
+🔍 MESSAGE_COUNT: Database returned 239 messages
+🔍 STATUS_DEBUG: Found 239 total messages processed
+STATUS_CYCLE: Updated to 'Watching We just dot VERIFIED!'
+🔍 DEBUG: Getting crosschat channels from MongoDB...
+🔍 DEBUG: Checking connection status - failed: False
+✅ DEBUG: Existing connection verified
+✅ DEBUG: Found 10 crosschat channels
+STATUS_DEBUG: Found 10 crosschat channels
+🔍 DEBUG: Checking connection status - failed: False
+✅ DEBUG: Existing connection verified
+✅ MONGODB: Retrieved crosschat message count: 239
+🔍 MESSAGE_COUNT: Database returned 239 messages
+🔍 STATUS_DEBUG: Found 239 total messages processed
+STATUS_CYCLE: Updated to 'Watching 10 Cross Chat channels'
+🔍 DEBUG: Getting crosschat channels from MongoDB...
+🔍 DEBUG: Checking connection status - failed: False
+✅ DEBUG: Existing connection verified
+✅ DEBUG: Found 10 crosschat channels
+STATUS_DEBUG: Found 10 crosschat channels
+🔍 DEBUG: Checking connection status - failed: False
+✅ DEBUG: Existing connection verified
+✅ MONGODB: Retrieved crosschat message count: 239
+🔍 MESSAGE_COUNT: Database returned 239 messages
+🔍 STATUS_DEBUG: Found 239 total messages processed
+STATUS_CYCLE: Updated to 'Watching 2,590 total members'
+🔍 DEBUG: Getting crosschat channels from MongoDB...
+🔍 DEBUG: Checking connection status - failed: False
+✅ DEBUG: Existing connection verified
+✅ DEBUG: Found 10 crosschat channels
+10.226.19.196 - - [01/Jul/2025 16:33:58] "HEAD / HTTP/1.1" 200 -
+     ==> Detected service running on port 10000
+     ==> Docs on specifying a port: https://render.com/docs/web-services#port-binding
+10.226.87.1 - - [01/Jul/2025 16:34:40] "HEAD /?1751387680647 HTTP/1.1" 200 -
+10.226.215.69 - - [01/Jul/2025 16:35:04] "HEAD / HTTP/1.1" 200 -
+10.226.224.68 - - [01/Jul/2025 16:36:08] "HEAD / HTTP/1.1" 200 -
