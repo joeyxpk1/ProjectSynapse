@@ -1661,7 +1661,7 @@ class CrossChatBot(commands.Bot):
         @self.tree.command(name="invite", description="Get the bot invite link")
         async def invite_command(interaction: discord.Interaction):
             try:
-                permissions = discord.Permissions(send_messages=True, embed_links=True, attach_files=True, read_message_history=True, add_reactions=True, use_slash_commands=True)
+                permissions = discord.Permissions(send_messages=True, embed_links=True, attach_files=True, read_message_history=True, add_reactions=True)
                 invite_url = discord.utils.oauth_url(self.user.id, permissions=permissions)
                 embed = discord.Embed(title="🤖 Invite SynapseChat", description="Add SynapseChat to your server", color=0x0099ff)
                 embed.add_field(name="Invite Link", value=f"[Click here to invite]({invite_url})", inline=False)
