@@ -1317,13 +1317,10 @@ class CrossChatBot(commands.Bot):
                 await interaction.followup.send(f"❌ Error listing banned servers: {str(e)}", ephemeral=True)
                 print(f"SERVERBANS: Error: {e}")
 
-        @self.tree.command(name="crosschat", description="View crosschat network information and statistics (Owner only)")
+        @self.tree.command(name="crosschat", description="View crosschat network information and statistics")
         async def crosschat(interaction: discord.Interaction):
             """Display crosschat network information"""
-            # Check permissions: Bot Owner only
-            if not await self.is_bot_owner(interaction):
-                await interaction.response.send_message("❌ You don't have permission to use this command. Required: Bot Owner only.", ephemeral=True)
-                return
+            # Permission check removed: This command can now be used by anyone.
             try:
                 await interaction.response.defer()
                 
