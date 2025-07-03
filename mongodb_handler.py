@@ -214,18 +214,22 @@ class MongoDBHandler:
             print(f"❌ Error marking alert processed: {e}")
             return False
 
-    def track_sent_message(self, cc_id: str, channel_id: str, sent_message_id: str) -> bool:
-        """Track sent crosschat messages for editing/deletion"""
+    def track_sent_message(self, cc_id: str, channel_id: str, sent_message_id: str, original_message_id: str = None) -> bool:
+        """Track sent crosschat messages for editing/deletion, with optional original_message_id"""
         try:
             if not self._ensure_connected():
                 return False
-            
-            self.db.sent_messages.insert_one({
+
+            doc = {
                 "cc_id": cc_id,
                 "channel_id": channel_id,
-                "message_id": sent_message_id,  # Fixed field name for consistency
+                "message_id": sent_message_id,
                 "timestamp": datetime.utcnow()
-            })
+            }
+            if original_message_id is not None:
+                doc["original_message_id"] = original_message_id
+
+            self.db.sent_messages.insert_one(doc)
             return True
         except Exception as e:
             print(f"❌ Error tracking sent message: {e}")
