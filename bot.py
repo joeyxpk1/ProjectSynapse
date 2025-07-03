@@ -4203,10 +4203,13 @@ class CrossChatBot(commands.Bot):
                 
                 # Define status messages to cycle through
                 status_messages = [
-                    "We just dot VERIFIED!",
+                    "Run /setup to get started",
                     f"{channel_count} Cross Chat channels",
+                    "Run /setup to get started",
                     f"{total_members:,} total members", 
+                    "Run /setup to get started",
                     f"{total_messages:,} messages processed",
+                    "Run /setup to get started",
                     f"Latency: {latency_ms}ms",
                     "Run /setup to get started"
                 ]
@@ -4226,8 +4229,8 @@ class CrossChatBot(commands.Bot):
                 # Move to next status
                 status_index += 1
                 
-                # Wait 15 seconds before cycling to next status
-                await asyncio.sleep(15)
+                # Wait 10 seconds before cycling to next status
+                await asyncio.sleep(10)
                 
             except Exception as e:
                 print(f"Status cycling error: {e}")
