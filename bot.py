@@ -656,7 +656,7 @@ class CrossChatBot(commands.Bot):
             
             embed.add_field(
                 name="🌐 Cross-Chat Commands",
-                value="`/announce` - Send announcements (SynapseStaff/Bot-Owner) \n`/crosschat` - View network info (Bot-Owner)\n`/setup` - Setup crosschat channels (SynapseStaff/Bot-Owner/Server Admin)",
+                value="`/announce` - Send announcements (SynapseStaff/Bot-Owner) \n`/crosschat` - View network info (Public Command)\n`/setup` - Setup crosschat channels (SynapseStaff/Bot-Owner/Server Admin)",
                 inline=False
             )
             
