@@ -171,9 +171,9 @@ class AutoModerationManager:
         
         # Discord invite patterns
         self.invite_patterns = [
-            r'discord\.gg/[a-zA-Z0-9]+',
-            r'discordapp\.com/invite/[a-zA-Z0-9]+',
-            r'discord\.com/invite/[a-zA-Z0-9]+'
+            r'discord\.gg[\\/][a-zA-Z0-9]+',
+            r'discordapp\.com/invite[\\/][a-zA-Z0-9]+',
+            r'discord\.com/invite[\\/][a-zA-Z0-9]+'
         ]
     
     def _get_cached_regex(self, pattern_key: str, pattern: str) -> Optional[re.Pattern]:
