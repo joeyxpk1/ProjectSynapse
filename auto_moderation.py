@@ -52,8 +52,6 @@ class AutoModerationManager:
         self.ban_duration_minutes = 20  # Ban duration in minutes
         
         # Whitelist system for users who bypass automod (now uses MongoDB for persistence)
-        # Note: whitelisted_users and whitelisted_roles are kept for backward compatibility
-        # but actual data is now stored in MongoDB
         self.whitelisted_users = set()  # Deprecated - kept for compatibility
         self.whitelisted_roles = set()  # Deprecated - kept for compatibility
         
@@ -135,7 +133,6 @@ class AutoModerationManager:
         
         # Phone number patterns (various formats)
         self.phone_patterns = [
-            # US/International formats
             r'\b\d{3}[-.\s]?\d{3}[-.\s]?\d{4}\b',  # 123-456-7890, 123.456.7890, 123 456 7890
             r'\(\d{3}\)\s?\d{3}[-.\s]?\d{4}',      # (123) 456-7890, (123)456-7890
             r'\+\d{1,3}[-.\s]?\d{3,4}[-.\s]?\d{3,4}[-.\s]?\d{3,4}',  # International +1-123-456-7890
@@ -146,34 +143,28 @@ class AutoModerationManager:
         
         # Address patterns (common residential indicators)
         self.address_patterns = [
-            # Street addresses
             r'\b\d+\s+[A-Za-z\s]+(street|st|avenue|ave|road|rd|drive|dr|lane|ln|boulevard|blvd|court|ct|place|pl|way|circle|cir)\b',
             r'\b\d+\s+[A-Za-z\s]+(street|st|avenue|ave|road|rd|drive|dr|lane|ln|boulevard|blvd|court|ct|place|pl|way|circle|cir)\s*#?\d*\b',
-            # Apartment/Unit indicators
             r'\b(apt|apartment|unit|suite|ste)\s*#?\d+\b',
-            r'\b#\d+\b',  # Unit numbers
-            # ZIP codes
-            r'\b\d{5}(-\d{4})?\b',  # 12345 or 12345-6789
-            # City, State combinations
-            r'\b[A-Za-z\s]+,\s*[A-Z]{2}\s*\d{5}\b',  # City, ST 12345
-            # PO Box
+            r'\b#\d+\b',
+            r'\b\d{5}(-\d{4})?\b',
+            r'\b[A-Za-z\s]+,\s*[A-Z]{2}\s*\d{5}\b',
             r'\b(po|p\.o\.)\s*box\s*\d+\b',
-            # Common residential terms
             r'\b(live\s+at|address\s+is|my\s+house|home\s+address)\s+\d+\b',
             r'\b\d+\s+(main|north|south|east|west|n|s|e|w)\s+[A-Za-z\s]+(street|st|avenue|ave|road|rd)\b',
         ]
         
-        # Link patterns
+        # Link patterns (fixed: simple robust URL matching)
         self.link_patterns = [
-            r'http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\\(\\),]|(?:%[0-9a-fA-F][0-9a-fA-F]))+',
-            r'www\.(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\\(\\),]|(?:%[0-9a-fA-F][0-9a-fA-F]))+',
+            r'https?://\S+',
+            r'www\.\S+'
         ]
         
-        # Discord invite patterns
+        # Discord invite patterns (fixed: simple robust invite matching)
         self.invite_patterns = [
-            r'discord\.gg[\\/][a-zA-Z0-9]+',
-            r'discordapp\.com/invite[\\/][a-zA-Z0-9]+',
-            r'discord\.com/invite[\\/][a-zA-Z0-9]+'
+            r'discord\.com/invite/\S+',
+            r'discord\.gg/\S+',
+            r'discordapp\.com/invite/\S+'
         ]
     
     def _get_cached_regex(self, pattern_key: str, pattern: str) -> Optional[re.Pattern]:
@@ -195,8 +186,8 @@ class AutoModerationManager:
             self.regex_cache[pattern_key] = compiled_pattern
             self.last_cache_update[pattern_key] = current_time
             return compiled_pattern
-        except re.error:
-            # Fallback to simple string matching if regex is invalid
+        except re.error as e:
+            print(f"Regex compilation error for pattern '{pattern_key}': {e}")
             return None
     
     def _invalidate_cache(self, pattern_key: str = None):
@@ -820,7 +811,7 @@ class AutoModerationManager:
                 'timestamp': datetime.now().isoformat(),
                 'metadata': {
                     'violation_count': violation_count,
-                    'warning_count': warning_count,
+                    'warning_count': total_warning_count,
                     'recent_violations': [v['reason'] for v in self.automod_violations[user_id]['violations'][-3:]]
                 }
             }
